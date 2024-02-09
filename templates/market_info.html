@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>{{ question }}</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <h1>{{ question }}</h1>
+    <p>This question has type {{ market_type }}</p> <!-- change this to be legit -->
+    
+    <form action="/market_info">
+      <input type="text" name="market_name" id="market_prob" placeholder="Enter search terms" />
+      <button type="submit">Search</button>
+    </form>
+  </body>
+  
+</html>
